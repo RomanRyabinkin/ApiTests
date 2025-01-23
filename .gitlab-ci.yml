@@ -1,0 +1,277 @@
+stages:
+  - get_login
+#  - sessions_list
+  - company_banner_info
+  - put_invite_banner
+  - count_company_users
+  - company_info
+  - get_chat
+  - popular_chats
+  - get_topics
+  - directs_chats_synchronization
+  - section_list
+  - section_settings
+  - get_section
+  - add_section
+#  - edit_section
+  - system_health
+  - system_last_version
+  - get_activity
+  - get_activity_hash
+#  - global_search
+#  - search_in_chat
+  - get_notice
+  - get_one_notice
+  - add_notice
+  - edit_notice
+  - delete_notice
+  - finish_notice
+  - delete_login
+  - login_list
+  - get_code
+  - folders
+  - chat_list_count
+  - get_available_channel_list_count
+  - get_popular_chats
+  - rename_chat
+  - get_chats_allow_for_invite
+  - get_user_profile
+  - get_user_from_chat
+
+
+#sessions_list:
+#  stage: sessions_list
+#  allow_failure: true
+#  script: pytest -m sessions_list
+#  retry:
+#    max: 1
+
+company_banner_info:
+  stage: company_banner_info
+  allow_failure: true
+  script: pytest -m company_banner_info
+  retry:
+    max: 1
+
+put_invite_banner:
+  stage: put_invite_banner
+  allow_failure: true
+  script: pytest -m put_invite_banner
+  retry:
+    max: 1
+
+count_company_users:
+  stage: count_company_users
+  allow_failure: true
+  script: pytest -m count_company_users
+  retry:
+    max: 1
+
+company_info:
+  stage: company_info
+  allow_failure: true
+  script: pytest -m company_info
+  retry:
+    max: 1
+
+get_chat:
+  stage: get_chat
+  allow_failure: true
+  script: pytest -m get_chat
+  retry:
+    max: 1
+
+popular_chats:
+  stage: popular_chats
+  allow_failure: true
+  script: pytest -m popular_chats
+  retry:
+    max: 1
+
+get_topics:
+  stage: get_topics
+  allow_failure: true
+  script: pytest -m get_topics
+  retry:
+    max: 1
+
+directs_chats_synchronization:
+  stage: directs_chats_synchronization
+  allow_failure: true
+  script: pytest -m directs_chats_synchronization
+  retry:
+    max: 1
+
+section_settings:
+  stage: section_settings
+  allow_failure: true
+  script: pytest -m section_settings
+  retry:
+    max: 1
+
+get_section:
+  stage: get_section
+  allow_failure: true
+  script: pytest -m get_section
+  retry:
+    max: 1
+
+section_list:
+  stage: section_list
+  allow_failure: true
+  script: pytest -m section_list
+  retry:
+    max: 1
+
+add_section:
+  stage: add_section
+  allow_failure: true
+  script: pytest -m add_section
+  retry:
+    max: 1
+
+#edit_section:
+#  stage: edit_section
+#  allow_failure: true
+#  script: pytest -m edit_section
+#  retry:
+#    max: 1
+
+
+
+system_health:
+  stage: system_health
+  allow_failure: true
+  script: pytest -m system_health
+  retry:
+    max: 1
+
+system_last_version:
+  stage: system_last_version
+  allow_failure: true
+  script: pytest -m system_last_version
+  retry:
+    max: 1
+
+get_activity:
+  stage: get_activity
+  allow_failure: true
+  script: pytest -m get_activity
+  retry:
+    max: 1
+
+get_activity_hash:
+  stage: get_activity_hash
+  allow_failure: true
+  script: pytest -m get_activity_hash
+  retry:
+    max: 1
+
+#global_search:
+#  stage: global_search
+#  allow_failure: true
+#  script: pytest -m global_search
+#
+#search_in_chat:
+#  stage: search_in_chat
+#  allow_failure: true
+#  script: pytest -m search_in_chat
+
+get_notice:
+  stage: get_notice
+  allow_failure: true
+  script: pytest -m get_notice
+
+get_one_notice:
+  stage: get_one_notice
+  allow_failure: true
+  script: pytest -m get_one_notice
+
+add_notice:
+  stage: add_notice
+  allow_failure: true
+  script: pytest -m add_notice
+
+edit_notice:
+  stage: edit_notice
+  allow_failure: true
+  script: pytest -m edit_notice
+
+delete_notice:
+  stage: delete_notice
+  allow_failure: true
+  script: pytest -m delete_notice
+
+finish_notice:
+  stage: finish_notice
+  allow_failure: true
+  script: pytest -m finish_notice
+
+delete_login:
+  stage: delete_login
+  allow_failure: true
+  script: pytest -m delete_login
+
+
+get_login:
+  stage: get_login
+  allow_failure: true
+  script: pytest -m get_login
+
+login_list:
+  stage: login_list
+  allow_failure: true
+  script: pytest -m login_list
+
+
+get_code:
+  stage: get_code
+  allow_failure: true
+  script: pytest -m get_code
+
+folders:
+  stage: folders
+  allow_failure: true
+  script: pytest -m folders
+
+chat_list_count:
+  stage: chat_list_count
+  allow_failure: true
+  script: pytest -m chat_list_count
+
+get_available_channel_list_count:
+  stage: get_available_channel_list_count
+  allow_failure: true
+  script: pytest -m get_available_channel_list_count
+
+get_popular_chats:
+  stage: get_popular_chats
+  allow_failure: true
+  script: pytest -m get_popular_chats
+
+rename_chat:
+  stage: rename_chat
+  allow_failure: true
+  script: pytest -m rename_chat
+
+get_chats_allow_for_invite:
+  stage: get_chats_allow_for_invite
+  allow_failure: true
+  script: pytest -m get_chats_allow_for_invite
+
+get_user_profile:
+  stage: get_user_profile
+  allow_failure: true
+  script: pytest -m get_user_profile
+
+get_user_from_chat:
+  stage: get_user_from_chat
+  allow_failure: true
+  script: pytest -m get_user_from_chat
+
+
+
+
+
+
+
